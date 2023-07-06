@@ -29,3 +29,6 @@ A script that sets the permission to the file hello as follows: owner and group 
 
 # 9-John_Doe
 A script that sets the mode of the file hello
+
+# 10-mirror_permissions
+A script that sets the mode of the file hello the same as olleh’s mode
