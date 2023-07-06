@@ -26,3 +26,6 @@ A script that adds execution permission to the owner, the group owner and the ot
 
 # 8-James_Bond
 A script that sets the permission to the file hello as follows: owner and group (no permission at all), otheers (all permission)
+
+# 9-John_Doe
+A script that sets the mode of the file hello
