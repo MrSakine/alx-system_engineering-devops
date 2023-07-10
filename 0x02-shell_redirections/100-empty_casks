@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -lah | find . -type f -size 0b | cut -d -f 1
+find . -type f -size 0b | cut -d -f 1
