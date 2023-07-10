@@ -54,6 +54,9 @@ Display lines containing the pattern “root” and 3 lines after them in the fi
 # 17-hidethisword
 Display all the lines in the file /etc/passwd that do not contain the pattern “bin”
 
+# 18-letteronly
+Display all lines of the file /etc/ssh/sshd_config starting with a letter
+
 
 
 
