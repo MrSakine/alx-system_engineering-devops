@@ -25,4 +25,7 @@ A script that creates a new local variable
 A script that creates a new global variable
 
 # 8-true_knowledge
-A script that prints the result of the addition of 128 with the value stored in the environment variable TRUEKNOWLEDGE, followed by a new line
+A script that prints the result of the addition of 128 with the value stored in the environment variable TRUEKNOWLEDGE, followed by a new linie
+
+# 9-divide_and_rule
+A script that prints the result of POWER divided by DIVIDE, followed by a new line
