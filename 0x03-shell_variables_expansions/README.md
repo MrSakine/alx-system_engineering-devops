@@ -38,3 +38,6 @@ A script that converts a number from base 2 to base 10
 
 # 12-combinations
 A script that prints all possible combinations of two letters, except oo
+
+# 13-print_float
+A script that prints a number with two decimal places, followed by a new line
