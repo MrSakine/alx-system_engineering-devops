@@ -13,7 +13,7 @@ At the end of this project, you are expected to be able to explain to anyone, wi
   - What are files and other comparison operators, and how to use them
 
 ### 0-RSA_public_key.pub
-Create a RSA key pair
+#### Create a RSA key pair
 Requirements:
   -Share your public key in your answer file 0-RSA_public_key.pub
   - Fill the SSH public key field of your intranet profile with the public key you just generated
