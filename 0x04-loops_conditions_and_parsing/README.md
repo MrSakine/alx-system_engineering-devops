@@ -60,3 +60,10 @@ a Bash script that gives you information about the school file
 
 ### 10-fizzbuzz
 a Bash script that displays numbers from 1 to 100
+
+## 100-read_and_cut
+a Bash script that displays the content of the file /etc/passwd.
+Your script should only display:
+  - username
+  - user id
+  - Home directory path for the user
