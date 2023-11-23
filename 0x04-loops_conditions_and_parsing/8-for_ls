@@ -2,9 +2,8 @@
 # This script is displaying the content of the current directory, in a list format, where only the part of the name after the first dash is displayed
 for i in $(find . -type f ! -path "*/.*" | sort)
 do
-  name=${i%%.}
-  if [[ $name == *"-"* ]]; then
-    name_without_number=${name:4}
+  if [[ $i == *"-"* ]]; then
+    name_without_number=${i:4}
     echo "$name_without_number"
   fi
 done
