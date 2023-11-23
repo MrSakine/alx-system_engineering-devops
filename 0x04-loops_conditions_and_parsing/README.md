@@ -71,3 +71,6 @@ Your script should only display:
 ### 101-tell_the_story_of_passwd
 a Bash script that displays the content of the file /etc/passwd, using the while loop + IFS
 Format: The user `USERNAME` is part of the `GROUP_ID` gang, lives in `HOME_DIRECTORY` and rides `COMMAND/SHELL`. `USER ID's` place is protected by the passcode `PASSWORD`, more info about the user here: `USER` `ID` `INFO`
+
+### 102-lets_parse_apache_logs
+a Bash script that displays the visitor IP along with the HTTP status code from the Apache log file
