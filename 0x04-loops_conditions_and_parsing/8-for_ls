@@ -4,7 +4,7 @@ for i in $(find . -type f ! -name "*.*" | sort)
 do
   name=${i%%.}
   if [[ $name == *"-"* ]]; then
-    name_without_number=${name:2}
+    name_without_number=${name:4}
     echo "$name_without_number"
   fi
 done
