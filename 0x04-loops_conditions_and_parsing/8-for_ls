@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# This script is displaying the content of the current directory, in a list format, where only the part of the name after the first dash is displayed (refer to the example)
+for i in *
+do
+  name=${i%%.}
+  if [[ $name == *"-"* ]]; then
+    name_without_number=${name:2}
+    echo "$name_without_number"
+  fi
+done
