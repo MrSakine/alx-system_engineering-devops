@@ -57,3 +57,6 @@ Write a Bash script that displays:
 
 ### 9-to_file_or_not_to_file
 a Bash script that gives you information about the school file
+
+### 10-fizzbuzz
+a Bash script that displays numbers from 1 to 100
