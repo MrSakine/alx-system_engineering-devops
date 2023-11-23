@@ -25,3 +25,6 @@ Write a Bash script that displays Best School 10 times
 
 ### 2-while_best_school
 a Bash script that displays Best School 10 times through while loop
+
+### 3-until_best_school
+a Bash script that displays Best School 10 times through untip loop
