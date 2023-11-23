@@ -74,3 +74,8 @@ Format: The user `USERNAME` is part of the `GROUP_ID` gang, lives in `HOME_DIREC
 
 ### 102-lets_parse_apache_logs
 a Bash script that displays the visitor IP along with the HTTP status code from the Apache log file
+
+### 103-dig_the-data
+a Bash script that displays the visitor IP along with the HTTP status code from the Apache log file
+Format:
+  - OCCURENCE_NUMBER IP HTTP_CODE
