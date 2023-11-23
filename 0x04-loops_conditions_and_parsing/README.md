@@ -28,3 +28,6 @@ a Bash script that displays Best School 10 times through while loop
 
 ### 3-until_best_school
 a Bash script that displays Best School 10 times through untip loop
+
+### 4-if_9_say_hi
+a Bash script that displays Best School 10 times, but for the 9th iteration, displays Best School and then Hi on a new line
