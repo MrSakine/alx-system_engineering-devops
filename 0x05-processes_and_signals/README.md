@@ -37,3 +37,6 @@ Write a Bash script that displays:
   - `I am invincible!!!` when receiving a `SIGTERM` signal
 
 Make a copy of your `6-stop_me_if_you_can` script, name it `67-stop_me_if_you_can`, that kills the `7-highlander` process instead of the `4-to_infinity_and_beyond one`
+
+### 8-beheaded_process
+a Bash script that kills the process `7-highlander`
