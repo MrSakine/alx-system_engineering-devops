@@ -26,3 +26,6 @@ a Bash script that displays `To infinity and beyond` indefinitely
 
 ### 5-dont_stop_me_now
 a Bash script that stops 4-to_infinity_and_beyond process
+
+### 6-stop_me_if_you_can
+a Bash script that stops 4-to_infinity_and_beyond process
