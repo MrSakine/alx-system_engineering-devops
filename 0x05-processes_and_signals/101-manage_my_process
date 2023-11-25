@@ -8,7 +8,7 @@ else
   case $1 in
   start)
   ./manage_my_process &
-  echo $$ > $pid_path
+  echo $! > $pid_path
   echo "manage_my_process started"
   ;;
   stop)
@@ -20,7 +20,7 @@ else
   kill "$(pgrep -f /manage_my_process)"
   rm $pid_path
   ./manage_my_process &
-  echo $$ > $pid_path
+  echo $! > $pid_path
   echo "manage_my_process restarted"
   ;;
   *)
