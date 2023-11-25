@@ -66,3 +66,6 @@ When passing the argument restart
   - Creates a file containing its PID in `/var/run/my_process.pid`
   - Displays `manage_my_process` restarted
 Displays `Usage: manage_my_process {start|stop|restart}` if any other argument or no argument is passed
+
+### 102-zombie.c
+a C program that creates 5 zombie processes
