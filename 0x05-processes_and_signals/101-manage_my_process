@@ -13,12 +13,12 @@ else
   ;;
   stop)
   kill "$(pgrep -f "/manage_my_process")"
-  rm -f $pid_path
+  rm $pid_path
   echo "manage_my_process stopped"
   ;;
   restart)
   kill "$(pgrep -f "/manage_my_process")"
-  rm -f $pid_path
+  rm $pid_path
   ./manage_my_process &
   echo $$ > $pid_path
   echo "manage_my_process restarted"
