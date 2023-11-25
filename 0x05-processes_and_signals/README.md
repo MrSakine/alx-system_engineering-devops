@@ -48,3 +48,21 @@ a Bash script that:
   - Displays `I hate the kill command` when receiving a SIGTERM signal
   - Displays `Y U no love me?!` when receiving a SIGINT signal
   - Deletes the file `/var/run/myscript.pid` and terminates itself when receiving a SIGQUIT or SIGTERM signal
+
+### 101-manage_my_process, manage_my_process
+Write Bash (init) script `101-manage_my_process` that manages `manage_my_process`. (both files need to be pushed to git)
+When passing the argument start:
+  - Starts `manage_my_process`
+  - Creates a file containing its PID in `/var/run/my_process.pid`
+  - Displays `manage_my_process` started
+When passing the argument stop:
+  - Stops `manage_my_process`
+  - Deletes the file `/var/run/my_process.pid`
+  - Displays `manage_my_process` stopped
+When passing the argument restart
+  - Stops `manage_my_process`
+  - Deletes the file `/var/run/my_process.pid`
+  - Starts `manage_my_process`
+  - Creates a file containing its PID in `/var/run/my_process.pid`
+  - Displays `manage_my_process` restarted
+Displays `Usage: manage_my_process {start|stop|restart}` if any other argument or no argument is passed
