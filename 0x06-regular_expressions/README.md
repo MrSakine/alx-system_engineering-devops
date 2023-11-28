@@ -54,3 +54,9 @@ Not quite HBTN yet <br>
 Requirements:
   - The regular expression must be exactly matching a string that starts with `h` ends with `n` and can have any single character in between
   - Using the project instructions, create a Ruby script that accepts one argument and pass it to a regular expression matching method
+
+### 6-phone_number.rb
+Call me maybe <br>
+This task is brought to you by a professional advisor [Neha Jain](https://intranet.alxswe.com/rltoken/GqwvXAvTXR_JXqyTvZ4AzQ), Senior Software Engineer at LinkedIn <br>
+Requirement:
+  - The regular expression must match a 10 digit phone number
