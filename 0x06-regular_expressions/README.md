@@ -19,7 +19,7 @@ sylvain@ubuntu$ ./example.rb 127.0.0.a
 ```
 
 ### 0-simply_match_school.rb
-Simply matching School
+Simply matching `School`<br>
 Requirements:
   - The regular expression must match `School`
   - Using the project instructions, create a Ruby script that accepts one argument and pass it to a regular expression matching method
