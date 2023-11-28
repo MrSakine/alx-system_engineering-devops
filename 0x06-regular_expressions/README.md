@@ -60,3 +60,8 @@ Call me maybe <br>
 This task is brought to you by a professional advisor [Neha Jain](https://intranet.alxswe.com/rltoken/GqwvXAvTXR_JXqyTvZ4AzQ), Senior Software Engineer at LinkedIn <br>
 Requirement:
   - The regular expression must match a 10 digit phone number
+
+### 7-OMG_WHY_ARE_YOU_SHOUTING.rb
+OMG WHY ARE YOU SHOUTING? <br>
+Requirement:
+  - The regular expression must be only matching: capital letters
