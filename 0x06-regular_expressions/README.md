@@ -29,3 +29,9 @@ Repetition Token #0<br>
 Requirements:
   - Find the regular expression that will match the [above cases](https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2020/9/e7db3c377d46453588fc84f3a975661d142fee91.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20231128%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20231128T155114Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=e9883a4254a8fa7043aa8b472dbf2766c1e2e539532642a9e6b787a16e359673)
   - Create a Ruby script that accepts one argument and pass it to a regular expression matching method
+
+### 2-repetition_token_1.rb
+Repetition Token #1 <br>
+Requirements:
+  - Find the regular expression that will match the [above cases](https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2020/9/c59ff11db195d5cf17d1790a5141ae2f234786d2.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20231128%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20231128T155114Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=d9f43137cd784fefc3bc745d9a54aab7e5c69326ae45c3df64cfe76f197f6858)
+  - Create a Ruby script that accepts one argument and pass it to a regular expression matching method
