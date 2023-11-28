@@ -41,3 +41,10 @@ Repetition Token #2 <br>
 Requirements:
   - Find the regular expression that will match the [above cases](https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2020/9/3b6bf4aeca6a0c2de584e7f5d68d11eef57ce205.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20231128%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20231128T155114Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=a0222a54139db93abe0ccf69bb155d8d9fa95c34ee1a0bacd158fbe3035595a8)
   - Create a Ruby script that accepts one argument and pass it to a regular expression matching method
+
+### 4-repetition_token_3.rb
+Repetition Token #3 <br>
+Requirements:
+  - Find the regular expression that will match the [above cases](https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2020/9/f8dbcb9cf5ae569a8645027dc46e81cb372ce28e.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20231128%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20231128T155114Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=3abff02b24fd9aa702eef7e1140bc1e1e159bf359f3aec9089aef07d57d43a37)
+  - Using the project instructions, create a Ruby script that accepts one argument and pass it to a regular expression matching method
+  - Your regex should not contain square brackets
