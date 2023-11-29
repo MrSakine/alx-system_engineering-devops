@@ -41,6 +41,7 @@ At the end of this project, you are expected to be able to explain to anyone, wi
 ### 0-OSI_model
 
 Questions: \
+
 What is the OSI model?
 
 - Set of specifications that network hardware manufacturers must respect
@@ -56,6 +57,7 @@ How is the OSI model organized?
 ### 1-types_of_network
 
 Questions: \
+
 What type of network a computer in local is connected to?
 
 - Internet
