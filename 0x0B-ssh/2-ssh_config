@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 # Configures ssh connection rules
 echo "PasswordAuthentication no" >> /etc/ssh/sshd_config
-echo "~/.ssh/school" >> /root/.ssh/authorized_keys
+echo "~/.ssh/school" >> ~/.ssh/authorized_keys
 service ssh restart
