@@ -4,3 +4,4 @@ chmod 600 ~/.ssh/school
 eval "$(ssh-agent -s)"
 ssh-add ~/.ssh/school
 ssh -i "~/.ssh/school" "ubuntu@54.144.46.157"
+ssh-agent -k
