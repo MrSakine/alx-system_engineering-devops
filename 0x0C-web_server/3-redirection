@@ -1,0 +1,25 @@
+#!/usr/bin/env bash
+# Configure Nginx server so that /redirect_me is redirecting to another page
+apt-get update
+apt-get install -y nginx
+ufw allow 'Nginx HTTP'
+touch /var/www/html/index.html
+echo "Hello World!" > /var/www/html/index.html
+echo "
+server {
+       listen 80;
+       listen [::]:80;
+
+       server_name _;
+
+       location / {
+            root /var/www/html;
+            index index.html;
+       }
+
+        location /redirect_me {
+            return 301 https://www.youtube.com/watch?v=QH2-TGUlwu4;
+        }
+}
+" > /etc/nginx/sites-available/default
+service nginx restart
