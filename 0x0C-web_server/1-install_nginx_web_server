@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# Install nginx web server
+apt-get update
+apt-get install -y nginx
+ufw allow 'Nginx HTTP'
+touch /var/www/html/index.html
+echo "Hello World!" > /var/www/html/index.html
+service nginx restart
