@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Nginx likes port 80, and make it sweet and short
+commands=("apt-get update" "apt-get install -y nginx" "ufw allow 'Nginx HTTP'" "service nginx start")
+for command in "${commands[@]}"; do eval "$command"; done
