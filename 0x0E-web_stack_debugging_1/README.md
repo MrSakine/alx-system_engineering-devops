@@ -11,3 +11,7 @@
 
 A bash script to install nginx and make it listen on port 80
 
+### 1-debugging_made_short
+
+Short version of 0-nginx_likes_port_80
+
