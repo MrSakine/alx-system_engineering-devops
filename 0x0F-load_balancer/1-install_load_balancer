@@ -1,26 +1,50 @@
 #!/usr/bin/env bash
 # Install and configure HAproxy on your lb-01 server
 install_haproxy() {
+    apt-get install -y software-properties-common
+    add-apt-repository -y ppa:vbernat/haproxy-2.8
     apt update
-    echo | add-apt-repository ppa:vbernat/haproxy-2.8
-    apt update
+    apt-get update
     apt-get install haproxy=2.8.\*
 }
 
 configure_haproxy() {
     config="/etc/haproxy/haproxy.cfg"
-    cp "$config" "$config.old"
-    echo "
+    echo "global
+    log /dev/log    local0
+    log /dev/log    local1 notice
+    chroot /var/lib/haproxy
+    stats socket /run/haproxy/admin.sock mode 660 level admin
+    stats timeout 30s
+    user haproxy
+    group haproxy
+    daemon
+
+defaults
+    log     global
+    mode    http
+    option  httplog
+    option  dontlognull
+    timeout connect 5000
+    timeout client  50000
+    timeout server  50000
+    errorfile 400 /etc/haproxy/errors/400.http
+    errorfile 403 /etc/haproxy/errors/403.http
+    errorfile 408 /etc/haproxy/errors/408.http
+    errorfile 500 /etc/haproxy/errors/500.http
+    errorfile 502 /etc/haproxy/errors/502.http
+    errorfile 503 /etc/haproxy/errors/503.http
+    errorfile 504 /etc/haproxy/errors/504.http
+
 frontend www
     bind *:80
     default_backend servers
-" >>$config
-    echo "
+
 backend servers
     balance roundrobin
-    server web-01 54.144.46.157:80 check
-    server web-02 54.167.85.19:80 check
-" >>$config
+    server 475984-web-01 54.144.46.157:80 check
+    server 475984-web-02 54.167.85.19:80 check
+" >$config
 }
 
 enable_haproxy_init() {
