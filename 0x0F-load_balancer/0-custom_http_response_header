@@ -1,0 +1,36 @@
+#!/usr/bin/env bash
+# Configure Nginx so that its HTTP response contains a custom header (on web-01 and web-02)
+apt-get update
+apt-get install -y nginx
+ufw allow 'Nginx HTTP'
+touch /var/www/html/index.html
+echo "Hello World!" >/var/www/html/index.html
+touch /var/www/html/404.html
+echo "Ceci n'est pas une page" >/var/www/html/404.html
+hostname="$(hostname)"
+echo "
+server {
+        listen 80;
+        listen [::]:80;
+
+        server_name _;
+
+        error_page 404 /404.html;
+        add_header X-Served-By $hostname;
+
+        location / {
+            root /var/www/html;
+            index index.html;
+        }
+
+        location /redirect_me {
+            return 301 https://www.youtube.com/watch?v=QH2-TGUlwu4;
+        }
+
+        location /404 {
+            root /var/www/html;
+            internal;
+        }
+}
+" >/etc/nginx/sites-available/default
+service nginx restart
