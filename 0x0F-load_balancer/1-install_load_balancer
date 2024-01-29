@@ -5,7 +5,7 @@ install_haproxy() {
     add-apt-repository -y ppa:vbernat/haproxy-1.8
     apt update
     apt-get update
-    apt-get install haproxy=1.8.\*
+    apt-get install -y haproxy=1.8.\*
 }
 
 configure_haproxy() {
