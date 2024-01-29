@@ -1,8 +1,7 @@
 # Add a custom HTTP header with Puppet
 
 package { 'nginx':
-  ensure   => installed,
-  provider => 'apt'
+  ensure   => installed
 }
 
 service { 'nginx':
@@ -49,7 +48,8 @@ file { '/etc/nginx/sites-available/default':
 }
 
 exec { 'Add header':
-  command => 'sed -i "/error_page 404 \\/404.html;/a add_header X-Served-By $(hostname);" /etc/nginx/sites-available/default',
-  path    => '/usr/bin:/bin',
-  notify  => Service['nginx']
+  environment => ["HOST=${hostname}"],
+  command     => 'sed -i "/error_page 404 \\/404.html;/a add_header X-Served-By $(hostname);" /etc/nginx/sites-available/default',
+  path        => '/usr/bin:/bin',
+  notify      => Service['nginx']
 }
