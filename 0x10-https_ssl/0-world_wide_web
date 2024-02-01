@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+# Displa7s information about subdomains
+subdomain_informations() {
+    line=$(dig "$2"."$1" | grep -A1 'ANSWER SECTION:' | tr '\t' '\n' | tail -2 | tr '\n' ' ')
+    echo "$2 $line" | awk '{print "The subdomain " $1 " is a " $2 " record and points to " $3}'
+}
+
+if [ "$#" == 1 ]; then
+    subdomain_informations "$1" "www"
+    subdomain_informations "$1" "lb-01"
+    subdomain_informations "$1" "web-01"
+    subdomain_informations "$1" "web-02"
+elif [ "$#" == 2 ]; then
+    subdomain_informations "$1" "$2"
+fi
