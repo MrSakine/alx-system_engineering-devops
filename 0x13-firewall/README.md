@@ -16,3 +16,7 @@ Configure `ufw` so that it blocks all incoming traffic, except the following TCP
 - `443` (HTTPS SSL)
 - `80` (HTTP)
 
+### 100-port_forwarding
+
+Configure the firewall to redirect port `8080/TCP` to port `80/TCP`
+
