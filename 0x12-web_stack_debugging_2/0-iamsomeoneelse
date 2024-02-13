@@ -1,3 +1,5 @@
 #!/usr/bin/env bash
 # Run software as another user
-runuser -u "$1" whoami
+if [ -n "$1" ]; then
+	runuser -u "$1" whoami
+fi
