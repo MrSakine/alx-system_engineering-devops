@@ -1,7 +1,3 @@
 #!/usr/bin/env bash
 # Run software as another user
-if [ -n "$1" ]; then
-	runuser -u "$1" whoami
-else
-	runuser -u root whoami
-fi
+sudo -u "$1" whoami
