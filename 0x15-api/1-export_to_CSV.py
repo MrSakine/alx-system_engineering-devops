@@ -10,18 +10,18 @@ if __name__ == "__main__":
     url = "https://jsonplaceholder.typicode.com/todos?userId={}".format(arg)
     res = requests.get(url=url)
     todos = res.json()
-    url = "https://jsonplaceholder.typicode.com/users/{}".format(sys.argv[1])
+    url = "https://jsonplaceholder.typicode.com/users/{}".format(arg)
     res = requests.get(url=url)
     user = res.json()
-    user_name = user.get("name")
+    user_name = user.get("username")
     for todo in todos:
         data = '"{0}","{1}","{2}","{3}"'.format(
-            sys.argv[1],
+            arg,
             user_name,
             todo.get("completed"),
             todo.get("title")
         )
         with open(
-            "{}.csv".format(sys.argv[1]), 'a', encoding="utf-8"
+            "{}.csv".format(arg), 'a', encoding="utf-8"
         ) as f:
             print(data, file=f)
