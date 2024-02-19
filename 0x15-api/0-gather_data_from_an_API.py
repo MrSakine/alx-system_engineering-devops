@@ -24,4 +24,4 @@ if __name__ == "__main__":
         )
     )
     for todo in completed_todos:
-        print("\t{}".format(todo.get("title")))
+        print("\t {}".format(todo.get("title")))
