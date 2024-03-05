@@ -9,7 +9,7 @@ import requests
 def top_ten(subreddit):
     """Return the top ten of a sub reddit"""
     url = "https://www.reddit.com/r/{}/hot.json?limit=10".format(subreddit)
-    headers = {'User-Agent': 'MyBot/1.0 (your_username)'}
+    headers = {"User-Agent": "MyRedditBot/1.0 (fily)"}
     response = requests.get(url, headers=headers, allow_redirects=False)
     if response.status_code == 200:
         data = response.json()
