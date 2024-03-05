@@ -12,13 +12,9 @@ def top_ten(subreddit):
     headers = {"User-Agent": "MyRedditBot/1.0 (fily)"}
     response = requests.get(url, headers=headers, allow_redirects=False)
     if response.status_code == 200:
-        data = response.json()
-        if data.get("error"):
-            print(None)
-        else:
-            data = data.get("data")
-            for _, post in enumerate(data.get("children"), start=1):
-                res = post.get("data")
-                print("{}".format(res.get("title")))
+        data = response.json().get("data")
+        for _, post in enumerate(data.get("children"), start=1):
+            res = post.get("data")
+            print("{}".format(res.get("title")))
     else:
-        print(None)
+        print("None")
